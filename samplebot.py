@@ -42,7 +42,7 @@ async def main():
 
   interface = gr.Interface(
     fn=chatbot, inputs= inputs, outputs=outputs, title="For you and your family",
-    description="Ask anything related to healthcare you want", theme="compact"
+    description="Ask anything related to healthcare you want", theme="default"
   )
 
   await asyncio.to_thread(interface.launch, share=True)
