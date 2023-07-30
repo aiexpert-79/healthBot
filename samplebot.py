@@ -41,8 +41,8 @@ async def main():
   outputs = gr.outputs.Textbox(label="Reply")
 
   interface = gr.Interface(
-    fn=chatbot, inputs= inputs, outputs=outputs, title="Healthcare chatbot",
-    description="Ask anything you want", theme="default"
+    fn=chatbot, inputs= inputs, outputs=outputs, title="For you and your family",
+    description="Ask anything related to healthcare you want", theme="compact"
   )
 
   await asyncio.to_thread(interface.launch, share=True)
