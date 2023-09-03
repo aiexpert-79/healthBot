@@ -11,7 +11,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 messages = [
   { 
     "role": "system", 
-    "content" :"You are an AI specialized in medical. Do not answer anything other than medical-related queries"   
+    "content" :"You are specialized in mental or physical health. Do not answer anything other than health-related queries"   
    }
 ]
 
